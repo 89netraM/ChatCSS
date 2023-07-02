@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ChatCSS</title>
+		<style>
+			#messages {
+				margin-top: 1rem;
+				display: flex;
+				flex-direction: column-reverse;
+			}
+			#messages p {
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>This is my CSS-only Chat!</h1>
+		<p>Inspired by <a href="https://github.com/kkuchta/css-only-chat/">kkuchta/css-only-chat</a>.</p>
+		<p>Please disable JavaScript, or not, you don't have to, but you could.</p>
+		<p>Currently we only have two "letters".</p>
+
+		<div id="keyboard">
+			<button id="cowboy">🤠</button>
+			<button id="hacker">👩‍💻</button>
+			<button id="send">Send</button>
+		</div>
+
+		<div id="messages">
+			<p><strong>Mårten: </strong>Hello</p>
+			<p><strong>Ankan: </strong>Tjenare</p>
+			<p><strong>Mårten: </strong>Nej men!</p>
+			<p><strong>Ankan: </strong>Så trevligt</p>
+			<style>
+				#cowboy:active {
+					background-color: #f00;
+				}
+			</style>
+			<p><strong>Mårten: </strong>Kompis!</p>
+			<style>
+				#cowboy:active {
+					background: url("./cowboy.png");
+				}
+			</style>
+			<style>
+				#cowboy:active {
+					background: url("./cowboy2.png");
+				}
+			</style>
